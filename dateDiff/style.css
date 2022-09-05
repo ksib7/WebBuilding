@@ -24,3 +24,8 @@
   position: absolute;
   right: -15px;
 }
+
+.date--position {
+  display: flex;
+  justify-content: flex-end;
+}

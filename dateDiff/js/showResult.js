@@ -1,6 +1,7 @@
 import { declensionNum } from "./timerDate/declansion.js";
 
 const result = document.getElementById("datecalc__result");
+const resultTimer = document.getElementById("datetimer__result");
 
 const $days = document.querySelector(".timer__days");
 const $hours = document.querySelector(".timer__hours");
@@ -9,6 +10,10 @@ const $seconds = document.querySelector(".timer__seconds");
 
 export const showError = (errorText) => {
   result.innerText = errorText;
+};
+
+export const showErrorTimer = (err) => {
+  resultTimer.innerText = err;
 };
 
 export const showResult = ({ years, months, days }) => {

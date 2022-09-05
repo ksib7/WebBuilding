@@ -1,5 +1,5 @@
 import { getDateDiff } from "./getDateDiff.js";
-import { showError, showResult } from "./showResult.js";
+import { showError, showErrorTimer, showResult } from "./showResult.js";
 import { countdownTimer } from "./timerDate/getTimer.js";
 
 // Калькулятор дат
@@ -33,5 +33,9 @@ timer.onsubmit = (event) => {
 
   const deadline = new Date(thirdInput);
 
-  countdownTimer(deadline);
+  if (!thirdInput) {
+    showErrorTimer("Please, choose date");
+  } else {
+    countdownTimer(deadline);
+  }
 };
