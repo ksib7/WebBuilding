@@ -1,4 +1,4 @@
-import { declensionNum } from "./timerDate/declansion";
+import { declensionNum } from "./timerDate/declansion.js";
 
 const result = document.getElementById("datecalc__result");
 
